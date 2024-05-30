@@ -16,11 +16,4 @@ jobs:
           diff=$(($num1 - $num2))
           echo "Sum: $sum"
           echo "Difference: $diff"
-          echo "数値を入力してください:"
-          read num1
-          echo "もう一つの数値を入力してください:"
-          read num2
-          sum=$(($num1 + $num2))
-          diff=$(($num1 - $num2))
-          echo "新しい合計: $sum"
-          echo "新しい差: $diff"
+          
