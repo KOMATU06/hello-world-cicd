@@ -9,8 +9,17 @@ jobs:
     steps:
       - name: Calculate and display numbers
         run: |
-          num1=${{ github.event.inputs.num1 }}
-          num2=${{ github.event.inputs.num2 }}
+          echo "Hello world"
+          num1=3  # ここで第一の数値を設定
+          num2=5  # ここで第二の数値を設定
+          sum=$(($num1 + $num2))
+          diff=$(($num1 - $num2))
+          echo "Sum: $sum"
+          echo "Difference: $diff"
+          echo "数値を入力してください:"
+          read num1
+          echo "もう一つの数値を入力してください:"
+          read num2
           sum=$(($num1 + $num2))
           diff=$(($num1 - $num2))
           echo "新しい合計: $sum"
